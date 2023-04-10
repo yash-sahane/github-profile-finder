@@ -12,7 +12,12 @@ const Home = () => {
     try {
       const response = await fetch(`https://api.github.com/search/users?q=${input}`);
       const data = await response.json();
-      console.log(data);
+      if (data.items.length === 0) {
+        return toast.error('Invalid username', {
+          position: toast.POSITION.TOP_CENTER,
+          autoClose: 3000
+        })
+      }
       setUsers(data.items)
     } catch (err) {
       console.log(err.message);
@@ -25,6 +30,7 @@ const Home = () => {
   useEffect(() => {
     userHandler()
   }, [])
+
 
   return (
     <>
