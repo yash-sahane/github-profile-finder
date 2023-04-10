@@ -1,0 +1,106 @@
+.inner-repo-div{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #1e2a47;
+    padding: 1rem;
+    border-radius: 10px;
+    max-width: 66rem;
+}
+
+@media (max-width: 1168px) {
+    .inner-repo-div{
+        display: initial;
+    }
+} 
+
+@media (max-width: 768px) {
+    .inner-repo-div{
+        flex-direction: column;
+        padding: 0;
+    }
+}
+
+.repo-div{
+    position : relative;
+    display: flex;
+    justify-content: space-between;
+    width: 30rem;
+    padding: 1rem;
+    background-color: #141d2f;
+    color: white;
+    margin: 1rem;
+    border-radius: 10px;
+}
+
+@media (max-width: 635px) {
+    .repo-div{
+        width: 80vw;
+        font-size: .9rem;
+    }
+}
+.repo-left-div{
+    line-height: 1.7rem;
+}
+.repo-left-div a{
+    text-decoration: none;
+}
+
+.repo-left-div p .lang-icon{
+    padding-right: .5rem;
+}
+
+.star-icon-div{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+.star-icon-div .star-icon{
+    padding-left: .3rem;
+    color: #e3b341;
+}
+
+.repo-left-div a{
+    text-decoration: none;
+    color: #185aff;
+}
+
+.repo-right-div{
+    display: flex;
+    flex-direction: column;
+    line-height: 1.7rem;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.repo-right-div p{
+    margin-left: auto;
+}
+.repo-right-div a{
+    margin-left: auto;
+    margin-top: 0.5rem;
+    padding: .5rem;
+    background-color: #1e2a47;
+    text-decoration: none;
+    border-radius: 5px;
+    color: white;
+}
+
+
+@media (max-width: 480px) {
+    .repo-div{
+        flex-direction: column;
+    }
+
+    .repo-right-div p {
+        margin-left: initial;
+    }
+    .repo-right-div a{
+        margin-left: initial;
+        text-align: center;
+    }
+    .repo-right-div {
+        margin-top: initial;
+    }
+   
+}

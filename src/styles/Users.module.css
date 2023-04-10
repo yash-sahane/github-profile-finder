@@ -1,0 +1,13 @@
+.users{
+    min-width: 45rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 768px){
+    .users{
+        min-width: 85vw;
+    }
+}

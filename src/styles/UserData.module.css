@@ -1,0 +1,141 @@
+.user-data-div{
+    min-width: 45rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 835px) {
+    .user-data-div{
+        min-width: 85vw;
+    }
+}
+
+.user-div {
+    display: flex;
+    align-items: center;
+    background-color: #1e2a47;
+    border-radius: 10px;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 2rem 2rem;
+}
+
+@media (max-width : 835px) {
+    .user-div {
+        display: initial;
+        padding: 1rem 1.5rem;
+    }
+}
+.user-profile-img {
+    height: 130px;
+    border-radius: 50%;
+}
+
+@media (max-width : 835px) {
+    .user-profile-img {
+        height: 100px;
+    }
+    .user-top-div {
+        margin: 0 auto;
+    }
+}
+
+.user-top-div{
+    display: flex;
+}
+
+.user-top-right-div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    margin-left: 1.5rem;
+    line-height: 1.7rem;
+    margin-top: .5rem;
+}
+
+@media (max-width: 835px){
+    .user-top-right-div{
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+.user-top-right-div a {
+    text-decoration: none;
+    color: #185cff;
+}
+
+.user-top-right-div div p{
+    font-size: 1rem;
+}
+@media (max-width: 768px) {
+    .user-top-right-div div p{
+        font-size: .9rem;
+    }
+}
+.user-imp-details {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.user-opt-details {
+    display: flex;
+    justify-content: space-between;
+    /* margin: 0 auto; */
+    background-color: #141d2f;
+    align-content: flex-end;
+    padding: 1rem 2rem;
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    width: 31.5rem;
+    margin-left: auto;
+    margin-top: -3rem;
+}
+
+@media (max-width : 835px) {
+    .user-opt-details {
+        margin: 0 auto;
+        font-size: .9rem;
+        min-width: 15rem;
+        width: 60vw;
+        margin-top: 1rem;
+    }
+}
+
+.user-links-details{
+    display: flex;
+    justify-content: space-around;
+    margin-left: auto;
+    margin-top: 1.2rem;
+    width: 31.5rem;
+    font-size: 1rem;
+    line-height: 2rem;
+}
+
+@media (max-width : 835px) {
+    .user-links-details {
+        margin: 1.2rem auto 0 auto;
+        width: 60vw;
+        font-size: .9rem;
+    }
+}
+@media (max-width: 480px) {
+    .user-links-details{
+        width: initial;
+    }
+}
+
+.links-details{
+    display: flex;
+    color: white;
+}
+.fontIcon{
+    margin-top: .5rem;
+    margin-right: .5rem;
+}
