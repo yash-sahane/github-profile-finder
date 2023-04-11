@@ -1,0 +1,12 @@
+version: 1
+build:
+  name: github-profile-finder
+  env: production
+  skipBuild: false
+  publish: dist
+  framework: vite
+  routes:
+    - src: /
+      dest: /index.html
+    - src: /.*
+      dest: /index.html
