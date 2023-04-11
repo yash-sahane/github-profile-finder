@@ -2,8 +2,10 @@ version: 1
 build:
   name: github-profile-finder
   env: production
+  name: github-profile-finder
+  buildCommand: vite build
+  publish: github-profile-finder/dist
   skipBuild: false
-  publish: dist
   framework: vite
   routes:
     - src: /
