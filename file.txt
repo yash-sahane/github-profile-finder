@@ -5,6 +5,7 @@ build:
   name: github-profile-finder
   buildCommand: vite build
   publish: github-profile-finder/dist
+  root: github-profile-finder/dist
   skipBuild: false
   framework: vite
   routes:
