@@ -21,7 +21,7 @@ const Form = ({ setInput, userHandler, input }) => {
     <div className={classes['form-div']} >
       <form action="" className={classes.form}>
         <img src={searchIcon} alt="Search" className={classes['search-icon']} />
-        <input type="text" onChange={(e) => setInput(e.target.value)} value={input} className={classes.input} placeholder='Search username...' />
+        <input type="text" onChange={(e) => setInput(e.target.value)} className={classes.input} placeholder='Search username...' />
         <button onClick={onFindHandler} className={classes.button}>Find</button>
       </form>
     </div>
