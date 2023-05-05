@@ -30,7 +30,7 @@ const UserProfile = () => {
     <>
       <UserData user={user} repos={repos} />
       <div className={classes['inner-repo-div']}>
-        {repos.map(repo => <Repo repo={repo} />)}
+        {repos.map((repo, i) => <Repo repo={repo} key={i} />)}
       </div>
     </>
   )
