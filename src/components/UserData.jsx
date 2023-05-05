@@ -3,6 +3,7 @@ import classes from '../styles/UserData.module.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLocationDot, faBuilding, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faTwitter } from "@fortawesome/free-brands-svg-icons"
+import { Link } from 'react-router-dom';
 
 const UserData = ({ user }) => {
     const { avatar_url, login, name, html_url, created_at, public_repos, followers, following, bio, location, company, email, twitter_username } = user
@@ -19,7 +20,7 @@ const UserData = ({ user }) => {
                         <div className={classes['user-top-right-div']}>
                             <div className={classes['top-right-left-div']}>
                                 <h2>{name}</h2>
-                                <a href={html_url}><p>@{login}</p></a>
+                                <Link to={html_url}><p>@{login}</p></Link>
                             </div>
                             <div className={classes['top-right-right-div']}>
                                 <p>Joined {formattedDate}</p>
