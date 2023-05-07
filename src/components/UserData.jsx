@@ -20,9 +20,7 @@ const UserData = ({ user }) => {
                         <div className={classes['user-top-right-div']}>
                             <div className={classes['top-right-left-div']}>
                                 <h2>{name}</h2>
-                                <Link to={`/user/${login}`}>
-                                    <p>@{login}</p>
-                                </Link>
+                                <a href={html_url} target="_blank"><p>@{login}</p></a>
                             </div>
                             <div className={classes['top-right-right-div']}>
                                 <p>Joined {formattedDate}</p>
