@@ -15,7 +15,7 @@ const Repo = ({ repo }) => {
   return (
     <div className={classes['repo-div']}>
       <div className={classes['repo-left-div']}>
-        <a href={html_url}><h3>{name}</h3></a>
+        <a href={html_url} target='_blank'><h3>{name}</h3></a>
         <p><FontAwesomeIcon icon={faTerminal} className={classes['lang-icon']} />{language}</p>
         <p><FontAwesomeIcon icon={faCodeFork} className={classes['lang-icon']} />{forks}</p>
       </div>
