@@ -41,6 +41,11 @@
         margin: 0 auto;
     }
 }
+@media (max-width : 500px) {
+    .user-profile-img {
+        height: 80px;
+    }
+}
 
 .user-top-div{
     display: flex;
@@ -58,8 +63,8 @@
 
 @media (max-width: 835px){
     .user-top-right-div{
-        flex-direction: column;
-        justify-content: center;
+        /* flex-direction: column;
+        justify-content: center; */
     }
 }
 
@@ -71,16 +76,49 @@
 .user-top-right-div div p{
     font-size: 1rem;
 }
+
 @media (max-width: 768px) {
     .user-top-right-div div p{
         font-size: .9rem;
     }
 }
+
+.top-right-left-div{
+    width: 100%;
+}
+
+.top-right-left-div-name-date{
+    display: flex;
+    justify-content: space-between;
+}
+
 .user-imp-details {
     display: flex;
     width: 100%;
     flex-direction: column;
     justify-content: center;
+}
+
+.user-bio {
+    width: 500px;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .user-bio {
+        width: auto;
+        max-width: 100%;
+    }
+}
+
+/* .user-joined{
+    margin-left: auto;
+} */
+
+@media (max-width: 600px) {
+    .top-right-left-div-name-date{
+        flex-direction: column;
+    }
 }
 
 .user-opt-details {
@@ -95,7 +133,7 @@
     border-radius: 10px;
     width: 31.5rem;
     margin-left: auto;
-    margin-top: -3rem;
+    /* margin-top: -3rem; */
 }
 
 @media (max-width : 835px) {
@@ -104,7 +142,7 @@
         font-size: .9rem;
         min-width: 15rem;
         width: 60vw;
-        margin-top: 1rem;
+        /* margin-top: 1rem; */
     }
 }
 

@@ -19,12 +19,15 @@ const UserData = ({ user }) => {
                         </div>
                         <div className={classes['user-top-right-div']}>
                             <div className={classes['top-right-left-div']}>
-                                <h2>{name}</h2>
+                                <div className={classes["top-right-left-div-name-date"]}>
+                                    <h2>{name}</h2>
+                                    <p className={classes['user-joined']}>Joined {formattedDate}</p>
+                                </div>
                                 <a href={html_url} target="_blank"><p>@{login}</p></a>
+                                <p className={classes['user-bio']}>{bio}</p>
                             </div>
-                            <div className={classes['top-right-right-div']}>
-                                <p>Joined {formattedDate}</p>
-                            </div>
+                            {/* <div className={classes['top-right-right-div']}>
+                            </div> */}
                         </div>
                     </div>
                     <div className={classes['bottom-opt-details']}>
